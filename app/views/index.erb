@@ -1,0 +1,7 @@
+<h2>Index Page</h2>
+
+<% @dishes.each do |dish| %>
+  <h4><%= dish.name %></h4>
+  <h5>$<%= dish.price %></h5>
+    <p><%= dish.description %></p>
+<% end %>
