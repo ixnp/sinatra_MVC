@@ -1,0 +1,20 @@
+<form method="post" action="/dishes/<%=@dish.id%>">
+    <input type="hidden" name="_method" value="PATCH">
+    <ul>
+        <li>
+            <label>Name</label>
+            <input type="text" name="name" value="<%= @dish.name %>">
+        </li>
+        <li>
+            <label>Price</label>
+            <input type="number" name="price" value="<%=@dish.price%>">
+        </li>
+       <li>
+        <label>description</label>
+        <input type="textarea" name="description" value="<%=@dish.description%>">
+       </li>
+       <li>
+        <input type="submit">
+        </li>
+    </ul>
+</form>
