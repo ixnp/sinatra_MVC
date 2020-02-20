@@ -1,0 +1,8 @@
+<h1>All items</h1>
+
+<% @dishes.each do |dish|%>
+<a href="dishes/<%=dish.id%>"> <%= dish.name%></a>
+<h5><%=dish.description %></h5>
+<h5>$<%=dish.price %></h5>
+
+<%end%>

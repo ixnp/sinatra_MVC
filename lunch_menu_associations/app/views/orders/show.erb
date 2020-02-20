@@ -1,0 +1,8 @@
+<h1>Order</h1>
+<h1><%=@order.name%></h1>
+<ul>
+
+    <% @order.dishes.each do |dish|%>
+    <li><%=dish.name%></li>
+    <%end%>
+</ul>
